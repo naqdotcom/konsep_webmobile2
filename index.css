@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background:#347074;
+    color: #fff;
+    padding: 40px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+header .logo span {
+    color: #E0C775;
+}
+
+header .menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header .menu li {
+    display: inline;
+}
+
+header .menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header .menu li a:hover {
+    color: #E0C775;
+}
+
+header .hero {
+    text-align: center;
+    margin: 40px 0;
+}
+
+header .hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+header .hero h1 span {
+    color: #E0C775;
+}
+
+header .hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+header .btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    background: #b99c3d;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+header .btn:hover {
+    background: #fff;    
+    color: #224a4d;
+    transform: translateY(-3px);
+}
+
+#features {
+    padding: 60px 0;
+    background-color: #C3F0F2;
+}
+
+#features h2 {
+    margin-bottom: 40px;
+    color: #347074; 
+    text-align: center;
+    font-size: 34px; 
+    font-weight: 600; 
+    text-transform: capitalize; 
+    letter-spacing: 1px; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+#features h2:hover {
+    color: #b3932a; 
+    transform: scale(1.1); 
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-item {
+    flex: 1;
+    max-width: 300px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px); /* Efek hover naik */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.feature-item img {
+    width: 100px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.feature-item:hover img {
+    transform: scale(1.1); 
+}
+
+#about {
+    padding: 60px 0;
+    text-align: center;
+    background: #C3F0F2;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+    color: #347074;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    position: relative; 
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contact {
+    padding: 60px 0;
+    background: #C3F0F2;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    color: #347074;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    position: relative; 
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#contact ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+footer {
+    background: #347074;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer a {
+    color: #E0C775;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Responsif: Sesuaikan untuk tampilan lebih kecil */
+@media (max-width: 768px) {
+    header .hero h1 {
+        font-size: 40px;
+    }
+
+    header .hero p {
+        font-size: 16px;
+    }
+
+    .features-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .feature-item {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    #about p {
+        font-size: 16px;
+    }
+
+    #contact ul li {
+        font-size: 16px;
+    }
+}
